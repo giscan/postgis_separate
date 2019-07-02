@@ -1,0 +1,10 @@
+version: '3.4'
+
+  pgdumper:
+    image: olivierdalang/spcgeonode:pgdumper-dev
+    volumes:
+      - ./_volume_pgdumps:/spcgeonode-pgdumps/
+
+  postgres:
+    ports:
+      - "5432:5432"
