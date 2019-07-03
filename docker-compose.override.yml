@@ -1,7 +1,8 @@
 version: '3.4'
+services:
 
   pgdumper:
-    image: olivierdalang/spcgeonode:pgdumper-dev
+    image: olivierdalang/pgdumper-latest
     volumes:
       - ./_volume_pgdumps:/spcgeonode-pgdumps/
 
